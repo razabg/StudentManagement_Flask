@@ -8,6 +8,7 @@ A production-ready RESTful API for student management, built with Flask and mode
 **Security:** JWT (Flask-JWT-Extended) • Bcrypt  
 **DevOps:** Docker • Docker Compose • Gunicorn  
 **Cloud:** AWS S3 • SMS Gateway Integration  
+**API Documentation:** Swagger/OpenAPI • Flask-RESTX  
 **Testing:** pytest • Marshmallow
 
 ## ✨ Key Features
@@ -17,6 +18,7 @@ A production-ready RESTful API for student management, built with Flask and mode
 - Advanced filtering, sorting, and pagination
 - AWS S3 integration for profile picture uploads
 - SMS notification system
+- Interactive API documentation with Swagger UI
 - Layered architecture (Controller → Service → Model)
 - Fully containerized with Docker
 
@@ -48,6 +50,12 @@ Docker • Docker Compose
 
 API runs at `http://localhost:5000`
 
+## 📚 API Documentation
+
+Interactive Swagger UI available at: `http://localhost:5000/swagger`
+
+Explore and test all endpoints directly from your browser with automatically generated API documentation.
+
 ## 📡 API Endpoints
 
 **Auth:** `/auth/login`, `/auth/logout`, `/auth/refresh`  
@@ -55,27 +63,7 @@ API runs at `http://localhost:5000`
 **Students:** `/students` - CRUD + SMS + Photo upload  
 **Grades:** `/students/<id>/grades` - Grade management
 
-## 📂 Project Structure
 
-```
-├── app/main/
-│   ├── controller/     # API route handlers
-│   ├── model/          # SQLAlchemy models
-│   ├── service/        # Business logic
-│   └── util/           # Helpers & decorators
-├── app/test/           # Unit tests
-├── migrations/         # Database migrations
-├── docker-compose.yml
-├── Dockerfile
-└── manage.py
-```
-
-## 🧪 Testing
-
-```bash
-docker exec -it pyserver pytest
-docker exec -it pyserver pytest --cov=app
-```
 
 ## 🤝 Contributing
 
@@ -87,4 +75,4 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
-**Built with:** Flask • PostgreSQL • Docker • AWS S3 • JWT
+**Built with:** Flask • PostgreSQL • Docker • AWS S3 • JWT • Swagger
