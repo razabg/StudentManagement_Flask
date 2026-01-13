@@ -9,7 +9,6 @@ A production-ready RESTful API for student management, built with Flask and mode
 **DevOps:** Docker • Docker Compose • Gunicorn  
 **Cloud:** AWS S3 • SMS Gateway Integration  
 **API Documentation:** Swagger/OpenAPI • Flask-RESTX  
-**Testing:** pytest • Marshmallow
 
 ## ✨ Key Features
 
